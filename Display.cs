@@ -17,7 +17,7 @@ namespace Mercado
             Product.Price = double.Parse(Console.ReadLine(), formated);
             Console.Write("Digite o Código do Produto: ");
             Product.Code = Console.ReadLine();
-            Console.Write("Digite a Quantidade em Estoque do Produto");
+            Console.Write("Digite a Quantidade em Estoque do Produto: ");
             Product.Stock = int.Parse(Console.ReadLine());
 
             return Product;

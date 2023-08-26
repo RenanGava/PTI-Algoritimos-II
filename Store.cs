@@ -24,7 +24,7 @@ namespace Mercado
                         this.Product.Price = this.ProductsInStock[i].Price;
                         this.Product.Code = this.ProductsInStock[i].Code;
                         this.Product.Stock = this.ProductsInStock[i].Stock + amount;
-                        
+
                         this.ProductsInStock.Insert(i, this.Product);
                         this.ProductsInStock.RemoveAt(i + 1);
                     }
@@ -53,7 +53,8 @@ namespace Mercado
         }
 
 
-        public void RemoveAmountStock(string code, int amount){
+        public void RemoveAmountStock(string code, int amount)
+        {
             if (code != "")
             {
 
@@ -65,7 +66,7 @@ namespace Mercado
                         this.Product.Price = this.ProductsInStock[i].Price;
                         this.Product.Code = this.ProductsInStock[i].Code;
                         this.Product.Stock = this.ProductsInStock[i].Stock - amount;
-                        
+
                         this.ProductsInStock.Insert(i, this.Product);
                         this.ProductsInStock.RemoveAt(i + 1);
                     }
@@ -91,13 +92,15 @@ namespace Mercado
 
             CultureInfo formated = CultureInfo.InvariantCulture;
 
-            Console.WriteLine("" + new String('_', 50) + "_");
+            Console.WriteLine("" + new String('-', 50) + "-");
+            Console.WriteLine("¦" + new String(' ', 14) + "Listagem de Produtos" + new String(' ', 15) + "¦");
+            Console.WriteLine("" + new String('-', 50) + "-");
             foreach (var product in this.ProductsInStock)
             {
                 var priceProductString = "" + product.Price.ToString("F2");
                 var stockProductString = "" + product.Stock;
                 // Code Product
-                Console.WriteLine("" + Spacing('_', 50) + "_");
+                Console.WriteLine("-" + Spacing('-', 50) + "-");
                 Console.WriteLine("¦ Code    ¦ " + product.Code + Spacing(' ', 39, product.Code.Length) + "¦");
                 Console.WriteLine("¦" + Spacing('_', 50) + "¦");
 
@@ -105,7 +108,7 @@ namespace Mercado
                 Console.WriteLine("¦ Produto ¦ " + product.Name + Spacing(' ', 39, product.Name.Length) + "¦");
                 Console.WriteLine("¦ Preço   ¦ " + priceProductString + Spacing(' ', 39, priceProductString.Length) + "¦");
                 Console.WriteLine("¦ Stock   ¦ " + stockProductString + Spacing(' ', 39, stockProductString.Length) + "¦");
-                Console.WriteLine("¦" + Spacing('_', 50) + "¦");
+                Console.WriteLine("¦" + Spacing('-', 50) + "¦");
 
             }
         }
