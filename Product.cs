@@ -1,7 +1,9 @@
-namespace Mercado{
+namespace Mercado
+{
 
 
-    struct Product{
+    struct Product
+    {
 
         public string Name;
         public double Price;

@@ -1,36 +1,88 @@
-﻿namespace Mercado{
+﻿using System.Globalization;
 
-    class Program{
+namespace Mercado
+{
 
-        static void Main(string[] args){
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Console.Clear();
             Store store = new Store();
+            Display display = new Display();
 
-           bool loop = true; 
+            bool loop = true;
 
-            while(loop){
+            while (loop)
+            {
+                display.DisplayOptions();
+                ConsoleKeyInfo option = Console.ReadKey();
+                Console.Clear();
+                
+                // Novo Produto
+                if (ConsoleKey.D1 == option.Key)
+                {
+                    Product product = display.InputLabels();
 
+                    store.NewProductStock(
+                        product.Name,
+                        product.Price,
+                        product.Code,
+                        product.Stock
+                    );
+                }
+                // Listar Produtos
+                else if (ConsoleKey.D2 == option.Key)
+                {
+                    store.PrintStockStore();
+                }
+                // Remover Produto
+                else if (ConsoleKey.D3 == option.Key)
+                {
+                    store.PrintStockStore();
+                    string code = Console.ReadLine();
+
+                    store.RemoveProductStock(code);
+                    
+                }
+                else if (ConsoleKey.D4 == option.Key)
+                {
+                    Product product = display.InputLabels();
+
+                    store.NewProductStock(
+                        product.Name,
+                        product.Price,
+                        product.Code,
+                        product.Stock
+                    );
+                    Console.Clear();
+                }
+                else if (ConsoleKey.D5 == option.Key)
+                {
+                    Product product = display.InputLabels();
+
+                    store.NewProductStock(
+                        product.Name,
+                        product.Price,
+                        product.Code,
+                        product.Stock
+                    );
+                    Console.Clear();
+                }
+                else if (ConsoleKey.D0 == option.Key)
+                {
+                    Product product = display.InputLabels();
+
+                    store.NewProductStock(
+                        product.Name,
+                        product.Price,
+                        product.Code,
+                        product.Stock
+                    );
+                    Console.Clear();
+                }
             }
-
-            
-
-            store.AddProductStock("teste1", 10.12, "123451", 10);
-            store.AddProductStock("TESTE2000", 20.11, "54321", 20);
-            // store.RemoveProductStock("54321");
-            store.PrintStockStore();
-        }
-
-
-        private void InputLabels(){
-
-            Product Product = new Product();
-            Console.Write("Digite o Nome do Produto");
-            Product.Name = Console.ReadLine();
-            Console.Write("Digite o Preço do Produto");
-            Product.Price = double.Parse(Console.ReadLine());
-            Console.Write("Digite o Nome do Produto");
-            Product.Name = Console.ReadLine();
-            Console.Write("Digite o Nome do Produto");
-            Product.Name = Console.ReadLine();
         }
     }
 
