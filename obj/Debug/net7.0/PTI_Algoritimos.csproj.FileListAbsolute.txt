@@ -1,0 +1,15 @@
+C:\Users\renan\Desktop\PTI_Algoritimos\bin\Debug\net7.0\PTI_Algoritimos.exe
+C:\Users\renan\Desktop\PTI_Algoritimos\bin\Debug\net7.0\PTI_Algoritimos.deps.json
+C:\Users\renan\Desktop\PTI_Algoritimos\bin\Debug\net7.0\PTI_Algoritimos.runtimeconfig.json
+C:\Users\renan\Desktop\PTI_Algoritimos\bin\Debug\net7.0\PTI_Algoritimos.dll
+C:\Users\renan\Desktop\PTI_Algoritimos\bin\Debug\net7.0\PTI_Algoritimos.pdb
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.csproj.AssemblyReference.cache
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.AssemblyInfoInputs.cache
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.AssemblyInfo.cs
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.csproj.CoreCompileInputs.cache
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.dll
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\refint\PTI_Algoritimos.dll
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.pdb
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\PTI_Algoritimos.genruntimeconfig.cache
+C:\Users\renan\Desktop\PTI_Algoritimos\obj\Debug\net7.0\ref\PTI_Algoritimos.dll
